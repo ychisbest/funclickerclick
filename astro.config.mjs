@@ -10,6 +10,6 @@ export default defineConfig({
   integrations: [sitemap()],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-cn'],
+    locales: ['en'],
   },
 });

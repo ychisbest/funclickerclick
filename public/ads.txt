@@ -1,4 +1,2 @@
 # Google AdSense / ads.txt
-# Replace the publisher id below with your real AdSense publisher id before going live.
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
-
+google.com, pub-8738419268805262, DIRECT, f08c47fec0942fa0

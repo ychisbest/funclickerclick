@@ -1,0 +1,5 @@
+interface:
+  display_name: "Astro Mini-Game Site"
+  short_description: "Ship an AdSense-ready mini-game site"
+  default_prompt: "Use $astro-mini-game-site to turn sample.html + a game URL into an Astro site with legal pages, SEO, and a screenshot gallery."
+  brand_color: "#000000"

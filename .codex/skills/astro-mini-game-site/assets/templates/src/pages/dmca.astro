@@ -1,0 +1,27 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
+const title = 'SITE NAME | DMCA';
+const lastUpdated = 'YYYY-MM-DD';
+---
+
+<SiteLayout title={title} canonicalPath="/dmca">
+  <Fragment slot="header"><SiteHeader /></Fragment>
+
+  <section class="space-y-8 border-none">
+    <h1 class="text-4xl font-black uppercase italic">DMCA</h1>
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Last Updated: {lastUpdated}</p>
+
+    <div class="space-y-4 text-sm font-medium leading-loose text-gray-700">
+      <p>If you believe content on this site infringes copyright, send a notice with the relevant URL(s).</p>
+      <p>
+        Email: <a class="underline font-black text-black" href="mailto:dmca@example.com">dmca@example.com</a>
+      </p>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><SiteFooter /></Fragment>
+</SiteLayout>
+

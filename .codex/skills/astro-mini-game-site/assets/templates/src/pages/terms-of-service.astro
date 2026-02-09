@@ -1,0 +1,30 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
+const title = 'SITE NAME | Terms of Service';
+const lastUpdated = 'YYYY-MM-DD';
+---
+
+<SiteLayout title={title} canonicalPath="/terms-of-service">
+  <Fragment slot="header"><SiteHeader /></Fragment>
+
+  <section class="space-y-8 border-none">
+    <h1 class="text-4xl font-black uppercase italic">Terms of Service</h1>
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Last Updated: {lastUpdated}</p>
+
+    <div class="space-y-4 text-sm font-medium leading-loose text-gray-700">
+      <p>By using this site, you agree to these Terms.</p>
+      <h2 class="text-xl font-black uppercase text-black">Disclaimer</h2>
+      <p>This site is provided on an &quot;AS IS&quot; basis without warranties.</p>
+      <h2 class="text-xl font-black uppercase text-black">Contact</h2>
+      <p>
+        Questions: <a class="underline font-black text-black" href="mailto:contact@example.com">contact@example.com</a>
+      </p>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><SiteFooter /></Fragment>
+</SiteLayout>
+

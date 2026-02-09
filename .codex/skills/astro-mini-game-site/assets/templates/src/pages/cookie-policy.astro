@@ -1,0 +1,26 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
+const title = 'SITE NAME | Cookie Policy';
+const lastUpdated = 'YYYY-MM-DD';
+---
+
+<SiteLayout title={title} canonicalPath="/cookie-policy">
+  <Fragment slot="header"><SiteHeader /></Fragment>
+
+  <section class="space-y-8 border-none">
+    <h1 class="text-4xl font-black uppercase italic">Cookie Policy</h1>
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Last Updated: {lastUpdated}</p>
+
+    <div class="space-y-4 text-sm font-medium leading-loose text-gray-700">
+      <p>This page explains how cookies are used on this site, including for ads and analytics.</p>
+      <h2 class="text-xl font-black uppercase text-black">Control</h2>
+      <p>You can control cookies in your browser settings.</p>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><SiteFooter /></Fragment>
+</SiteLayout>
+

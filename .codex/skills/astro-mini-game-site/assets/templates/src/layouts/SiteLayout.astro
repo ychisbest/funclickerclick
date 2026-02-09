@@ -1,7 +1,5 @@
 ---
 import '../styles/global.css';
-import SiteHeader from '../components/SiteHeader.astro';
-import SiteFooter from '../components/SiteFooter.astro';
 
 type Props = {
   title: string;
@@ -11,7 +9,7 @@ type Props = {
 
 const {
   title,
-  description = 'The ultimate guide to Fun Clicker. Explore the twisted lore, master the shop strategy, and survive the transformation.',
+  description = 'Mini-game portal with an embedded browser game, screenshots, and FAQs.',
   canonicalPath,
 } = Astro.props;
 
@@ -36,9 +34,6 @@ const canonicalUrl = new URL(canonicalPath ?? Astro.url.pathname, Astro.site);
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="alternate icon" href="/favicon.ico" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,19 +41,14 @@ const canonicalUrl = new URL(canonicalPath ?? Astro.url.pathname, Astro.site);
       rel="stylesheet"
     />
 
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8738419268805262"
-      crossorigin="anonymous"
-    ></script>
-
     <title>{title}</title>
   </head>
   <body class="antialiased selection:bg-black selection:text-white">
-    <SiteHeader />
+    <slot name="header" />
     <main class="max-w-4xl mx-auto px-6 pb-24">
       <slot />
     </main>
-    <SiteFooter />
+    <slot name="footer" />
   </body>
 </html>
+

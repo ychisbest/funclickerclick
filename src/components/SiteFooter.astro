@@ -1,0 +1,40 @@
+---
+const year = new Date().getFullYear();
+const lastUpdated = '2026-02-09';
+const versionLabel = 'Silence Updated';
+---
+
+<footer class="bg-black text-white py-20 px-6">
+  <div class="max-w-4xl mx-auto space-y-12">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+      <div class="space-y-4">
+        <div class="text-2xl font-black uppercase italic tracking-tighter">
+          FUNCLICKER<span class="text-blue-500">.CLICK</span>
+        </div>
+        <p class="text-[9px] font-bold text-gray-500 uppercase leading-loose max-w-xs">
+          Infusing the mundane with dread. A testament to indie browser game creativity. Prepared for the void.
+        </p>
+      </div>
+
+      <div class="flex gap-12 font-black text-[10px] uppercase tracking-[0.2em]">
+        <div class="space-y-2">
+          <a href="/privacy-policy" class="block hover:text-neo-yellow">Privacy</a>
+          <a href="/terms-of-service" class="block hover:text-neo-yellow">Terms</a>
+          <a href="/cookie-policy" class="block hover:text-neo-yellow">Cookies</a>
+          <a href="/dmca" class="block hover:text-neo-yellow">DMCA</a>
+          <a href="/contact" class="block hover:text-neo-yellow">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-12 border-t border-gray-800 text-center space-y-2">
+      <p class="text-[9px] font-black text-gray-600 uppercase tracking-widest">
+        © {year} FUNCLICKER.CLICK - ALL RIGHTS RESERVED
+      </p>
+      <p class="text-[9px] font-black text-gray-400 uppercase">
+        Last Updated: {lastUpdated} | Version: {versionLabel}
+      </p>
+    </div>
+  </div>
+</footer>
+

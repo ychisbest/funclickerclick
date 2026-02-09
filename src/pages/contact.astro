@@ -1,0 +1,25 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = 'fun clicker | Contact';
+---
+
+<SiteLayout title={title} description="Contact FunClicker.click for support, feedback, or legal requests." canonicalPath="/contact">
+  <section class="space-y-8 border-none">
+    <h1 class="text-4xl font-black uppercase italic">Contact</h1>
+
+    <div class="space-y-4 text-sm font-medium leading-loose text-gray-700">
+      <p>
+        For general questions, feedback, or business inquiries, email
+        <a class="underline font-black text-black" href="mailto:contact@funclicker.click">contact@funclicker.click</a>.
+      </p>
+      <p>
+        For DMCA-related requests, email
+        <a class="underline font-black text-black" href="mailto:dmca@funclicker.click">dmca@funclicker.click</a>.
+      </p>
+      <p class="text-xs text-gray-500">
+        Please include the relevant URL(s) and as much detail as possible so we can respond quickly.
+      </p>
+    </div>
+  </section>
+</SiteLayout>

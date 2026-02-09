@@ -1,0 +1,47 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = 'fun clicker | DMCA';
+const lastUpdated = '2026-02-09';
+---
+
+<SiteLayout title={title} description="DMCA notice and takedown procedure for FunClicker.click." canonicalPath="/dmca">
+  <section class="space-y-8 border-none">
+    <h1 class="text-4xl font-black uppercase italic">DMCA Notice</h1>
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Last Updated: {lastUpdated}</p>
+
+    <div class="space-y-4 text-sm font-medium leading-loose text-gray-700">
+      <p>
+        FunClicker.click respects the intellectual property rights of others. If you believe content on this site
+        infringes your copyright, you may submit a DMCA takedown notice.
+      </p>
+
+      <h2 class="text-xl font-black uppercase text-black">How to File a Notice</h2>
+      <p>
+        Send an email to
+        <a class="underline font-black text-black" href="mailto:dmca@funclicker.click">dmca@funclicker.click</a>
+        with the following information:
+      </p>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>Your full legal name and contact information (email, address, phone number).</li>
+        <li>Identification of the copyrighted work you claim has been infringed.</li>
+        <li>The exact URL(s) on our site where the material is located.</li>
+        <li>A statement that you have a good-faith belief the use is not authorized by the copyright owner, agent, or law.</li>
+        <li>A statement, under penalty of perjury, that the information in the notice is accurate and that you are the copyright owner or authorized to act on their behalf.</li>
+        <li>Your physical or electronic signature.</li>
+      </ul>
+
+      <h2 class="text-xl font-black uppercase text-black">Counter-Notification</h2>
+      <p>
+        If you believe material was removed by mistake, you may send a counter-notification. Include your contact
+        details, identification of the material and its location before removal, and a statement under penalty of
+        perjury that you believe removal was a mistake or misidentification.
+      </p>
+
+      <h2 class="text-xl font-black uppercase text-black">Policy</h2>
+      <p>
+        We may remove allegedly infringing content and, in appropriate circumstances, terminate repeat infringers.
+      </p>
+    </div>
+  </section>
+</SiteLayout>

@@ -1,0 +1,56 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = 'fun clicker | Cookie Policy';
+const lastUpdated = '2026-02-09';
+---
+
+<SiteLayout
+  title={title}
+  description="Cookie Policy for FunClicker.click, including how cookies are used for ads and analytics."
+  canonicalPath="/cookie-policy"
+>
+  <section class="space-y-8 border-none">
+    <h1 class="text-4xl font-black uppercase italic">Cookie Policy</h1>
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Last Updated: {lastUpdated}</p>
+
+    <div class="space-y-4 text-sm font-medium leading-loose text-gray-700">
+      <p>
+        This Cookie Policy explains what cookies are and how FunClicker.click uses them. It should be read together
+        with our Privacy Policy.
+      </p>
+
+      <h2 class="text-xl font-black uppercase text-black">What Are Cookies?</h2>
+      <p>
+        Cookies are small text files stored on your device. They help websites remember information about your visit
+        (for example, preferences or session state).
+      </p>
+
+      <h2 class="text-xl font-black uppercase text-black">How We Use Cookies</h2>
+      <ul class="list-disc pl-5 space-y-2">
+        <li><strong>Essential:</strong> required to deliver basic site functionality.</li>
+        <li><strong>Performance:</strong> help us understand how visitors use the site and improve it.</li>
+        <li><strong>Advertising:</strong> used by third-party partners to display and measure ads.</li>
+      </ul>
+
+      <h2 class="text-xl font-black uppercase text-black">Third-Party Cookies (Google)</h2>
+      <p>
+        Third-party vendors, including Google, may use cookies to serve ads based on a user&apos;s prior visits to this
+        website or other websites. These cookies may be used to limit the number of times you see an ad, measure ad
+        effectiveness, and personalize ads.
+      </p>
+
+      <h2 class="text-xl font-black uppercase text-black">How to Control Cookies</h2>
+      <p>
+        You can manage or delete cookies in your browser settings. You can also use available opt-out mechanisms
+        provided by advertising partners. Note that blocking cookies may affect certain site features.
+      </p>
+
+      <h2 class="text-xl font-black uppercase text-black">Contact</h2>
+      <p>
+        If you have questions about cookies on this site, contact
+        <a class="underline font-black text-black" href="mailto:contact@funclicker.click">contact@funclicker.click</a>.
+      </p>
+    </div>
+  </section>
+</SiteLayout>

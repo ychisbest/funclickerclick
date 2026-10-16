@@ -4,9 +4,9 @@ import { Image } from 'astro:assets';
 import screenshot1 from '../assets/1.png';
 import screenshot2 from '../assets/2.png';
 
-const title = 'fun clicker';
+const title = 'Fun Clicker – Play Free Online Browser Clicker Game';
 const description =
-  'Play Fun Clicker in your browser and use our original strategy guide, controls help, and troubleshooting FAQ.';
+  'Play Fun Clicker free in your browser — no download. Fast play page for the fun clicker / funklicker game, with a short hub to tips and FAQ.';
 
 const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clicker/fun-clicker.html';
 ---
@@ -17,7 +17,9 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
       <h1 class="hero-text text-5xl md:text-7xl font-black uppercase italic">
         FUN<br />CLICKER.
       </h1>
-      <p class="text-xs font-bold uppercase tracking-[0.3em] text-gray-400">Browser Game Guide And Play Page</p>
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-gray-400">
+        Play Free Online · No Download · Browser Clicker
+      </p>
     </div>
 
     <div id="game-shell" class="bg-black neo-border shadow-brutal aspect-video overflow-hidden group">
@@ -39,8 +41,13 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
       <span class="bg-neo-blue neo-border px-3 py-1 shadow-brutal-sm">Desktop + Mobile</span>
     </div>
 
-    <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">
-      fun clicker guide, fun clicker tips, fun clicker FAQ.
+    <nav class="flex flex-wrap justify-center gap-3 pt-4 text-[10px] font-black uppercase" aria-label="Fun Clicker hub">
+      <a href="/#game" class="bg-black text-white neo-border px-4 py-2 shadow-brutal-sm">Play now</a>
+      <a href="/guide/" class="bg-neo-yellow neo-border px-4 py-2 shadow-brutal-sm">Tips &amp; FAQ guide</a>
+      <a href="/unblocked/" class="bg-neo-blue neo-border px-4 py-2 shadow-brutal-sm">Browser / unblocked notes</a>
+    </nav>
+    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest pt-2">
+      Also searched as funclicker / funklicker — same Fun Clicker browser game.
     </p>
 
     <div class="flex justify-center gap-3 pt-2 text-[10px] font-black uppercase">
@@ -101,14 +108,19 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
       </div>
       <div class="md:w-2/3 space-y-6 text-sm font-medium leading-loose text-gray-700">
         <p>
-          This website is an independent fan guide for Fun Clicker. Our goal is to provide a fast play page, practical
-          control tips, and a clear FAQ so players can troubleshoot common issues without searching across multiple
-          forums.
+          This website is an independent fan play page for Fun Clicker (also searched as funclicker or funklicker). Our
+          goal is a fast browser embed plus a short hub so you can jump into the game without hunting forums.
+        </p>
+        <p>
+          Deep tips, upgrade path, CPS basics, and troubleshooting live on the
+          <a class="underline font-black text-black" href="/guide/">Fun Clicker guide</a>. Notes about playing in your
+          browser (soft “unblocked” intent, no filter-bypass promises) are on
+          <a class="underline font-black text-black" href="/unblocked/">/unblocked/</a>.
         </p>
         <div class="bg-neo-yellow neo-border p-6 shadow-brutal-sm text-black">
           <h3 class="font-black uppercase mb-2">Original Editorial Note</h3>
           <p>
-            The guide text on this page is original writing created for FunClicker.click. The embedded game is served
+            The guide text on this site is original writing created for FunClicker.click. The embedded game is served
             from a third-party source and remains the property of its respective owner.
           </p>
         </div>
@@ -164,7 +176,7 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
 
     <div class="grid md:grid-cols-2 gap-12">
       <div class="space-y-6">
-        <h3 class="text-xl font-black uppercase bg-black text-white inline-block px-2">Upgrade Path</h3>
+        <h3 class="text-xl font-black uppercase bg-black text-white inline-block px-2">Upgrade Path (teaser)</h3>
         <div class="space-y-4">
           <div class="border-l-4 border-black pl-4">
             <p class="font-black text-xs">STEP 1: LOW-COST CLICK BOOSTS</p>
@@ -174,15 +186,11 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
             <p class="font-black text-xs">STEP 2: MID-TIER MULTIPLIERS</p>
             <p class="text-xs text-gray-500">Move into medium upgrades once each click starts scaling.</p>
           </div>
-          <div class="border-l-4 border-black pl-4">
-            <p class="font-black text-xs">STEP 3: AUTO-CLICK OPTIONS</p>
-            <p class="text-xs text-gray-500">Automation can stabilize progress and reduce repetitive tapping.</p>
-          </div>
-          <div class="border-l-4 border-black pl-4">
-            <p class="font-black text-xs">STEP 4: SAVE BIG FOR HIGH VALUE</p>
-            <p class="text-xs text-gray-500">Skip weak purchases and wait for better long-term upgrades.</p>
-          </div>
         </div>
+        <p class="text-xs font-medium text-gray-600">
+          Steps 3–4, CPS notes, and pro strategies moved to the
+          <a class="underline font-black text-black" href="/guide/">full Fun Clicker guide → /guide/</a>.
+        </p>
       </div>
 
       <div class="bg-neo-blue neo-border p-6 shadow-brutal space-y-4">
@@ -252,11 +260,13 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
           <p class="text-neo-blue">02. Compare Cost vs Gain</p>
           <p class="opacity-70">Prioritize upgrades with the best return over the next one to two minutes.</p>
         </div>
-        <div>
-          <p class="text-neo-blue">03. Use Reload If Input Lags</p>
-          <p class="opacity-70">If clicks stop registering, use RELOAD before resetting browser storage.</p>
-        </div>
       </div>
+      <a
+        href="/guide/#strategies"
+        class="inline-block text-[10px] font-black uppercase bg-neo-yellow text-black neo-border px-4 py-2 shadow-brutal-sm"
+      >
+        Full Fun Clicker guide → /guide/
+      </a>
     </div>
 
     <div class="bg-white p-8 neo-border shadow-brutal space-y-6">
@@ -281,7 +291,8 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
           <span class="group-open:rotate-180 transition-transform">▼</span>
         </summary>
         <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Most builds use local browser storage. If you clear site data, your progress may reset.
+          Most builds use local browser storage. If you clear site data, your progress may reset. More detail in the
+          <a class="underline font-black text-black" href="/guide/#faq">guide FAQ</a>.
         </p>
       </details>
 
@@ -291,7 +302,7 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
           <span class="group-open:rotate-180 transition-transform">▼</span>
         </summary>
         <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Yes. This page provides browser access without requiring a download.
+          Yes. This page provides browser access without requiring a download or APK.
         </p>
       </details>
 
@@ -307,51 +318,11 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
 
       <details class="py-6 group cursor-pointer">
         <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          What does CPS mean in fun clicker?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          CPS means clicks per second. Higher CPS generally improves passive progress.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          Which upgrades are best at the beginning?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Start with low-cost upgrades, then switch to multipliers once early progress speeds up.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
           Why is the game not loading?
           <span class="group-open:rotate-180 transition-transform">▼</span>
         </summary>
         <p class="mt-4 text-sm font-medium text-gray-600 italic">
           Check your connection, disable strict blockers temporarily, and use the RELOAD button.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          How do I play in fullscreen on this site?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Click FULLSCREEN below the frame. Some browsers require one user interaction first.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          The frame is frozen. What should I do?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Use RELOAD to refresh only the embedded game. This avoids reloading the full site.
         </p>
       </details>
 
@@ -367,63 +338,63 @@ const gameUrl = import.meta.env.PUBLIC_GAME_URL ?? 'https://webresources.cc/clic
 
       <details class="py-6 group cursor-pointer">
         <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          Can I report broken content or legal issues?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Yes. Use our Contact or DMCA page and include the exact URL and details.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          Does the site require an account?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          No account is required to open and play the embedded game.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          Why are ads shown on this site?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Ads support hosting and content maintenance. See our Privacy and Cookie Policy for details.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          Can I disable cookies?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Yes. You can change cookie settings in your browser, but some features may stop working.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
-          Is any personal information required to play?
-          <span class="group-open:rotate-180 transition-transform">▼</span>
-        </summary>
-        <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          No personal information is required for basic gameplay on this page.
-        </p>
-      </details>
-
-      <details class="py-6 group cursor-pointer">
-        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
           How can I contact the site owner?
           <span class="group-open:rotate-180 transition-transform">▼</span>
         </summary>
         <p class="mt-4 text-sm font-medium text-gray-600 italic">
-          Email contact@funclicker.click and include your question or request.
+          Email contact@funclicker.click or use our <a class="underline font-black text-black" href="/contact">Contact</a>
+          page.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Is Fun Clicker a horror game?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Some playthroughs feel light at first and get darker or weirder as upgrades stack. This site is a casual
+          browser play hub — see the <a class="underline font-black text-black" href="/guide/">Fun Clicker guide</a> for
+          what to expect, not a separate “horror edition” page.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          What is the “silence” Fun Clicker version?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          People sometimes search quiet or “silence” variants. We embed the standard browser build here and do not ship
+          a separate silence landing page.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Is this the Scratch / scratch clicker game?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Fun Clicker is often associated with Scratch-style clicker experiments. We provide a browser embed for
+          convenience; it may not match every Scratch remix name-for-name.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Fun Clicker 2 / version 2?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Searches for “version 2” usually mean an updated build or a lookalike. We focus on the current playable embed
+          on this site rather than a fake multi-version directory.
         </p>
       </details>
     </div>
+    <p class="text-xs font-medium text-gray-500">
+      More troubleshooting (CPS, fullscreen, frozen frame, cookies/ads) →
+      <a class="underline font-black text-black" href="/guide/#faq">/guide/#faq</a>
+    </p>
   </section>
 </SiteLayout>

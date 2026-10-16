@@ -1,0 +1,224 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const title = 'Fun Clicker Guide: Tips, Upgrades, FAQ & Strategies';
+const description =
+  'Fun Clicker tips and FAQ: how to play in your browser, early upgrades, CPS basics, troubleshooting, and simple strategies — no download required.';
+---
+
+<SiteLayout title={title} description={description} canonicalPath="/guide">
+  <section class="space-y-8 border-none">
+    <p class="text-[10px] font-black uppercase tracking-widest text-gray-400">
+      <a href="/" class="hover:text-black">Play</a>
+      <span class="mx-2">/</span>
+      Guide
+    </p>
+
+    <h1 class="text-4xl md:text-5xl font-black uppercase italic leading-none">
+      Fun Clicker<br />Guide.
+    </h1>
+    <p class="text-sm font-medium leading-loose text-gray-700 max-w-2xl">
+      Practical tips for the Fun Clicker browser game: how to start, what to buy first, what CPS means, and fixes when
+      the frame freezes. Looking for the play window? Open the
+      <a class="underline font-black text-black" href="/">Fun Clicker play page</a>. Curious about “unblocked” /
+      no-download play? See
+      <a class="underline font-black text-black" href="/unblocked/">browser play notes</a>.
+    </p>
+
+    <div class="flex flex-wrap gap-3 text-[10px] font-black uppercase">
+      <a href="/#game" class="bg-black text-white neo-border px-4 py-2 shadow-brutal-sm">Play now</a>
+      <a href="#how-to" class="bg-neo-yellow neo-border px-4 py-2 shadow-brutal-sm">How to play</a>
+      <a href="#faq" class="bg-neo-blue neo-border px-4 py-2 shadow-brutal-sm">FAQ</a>
+    </div>
+  </section>
+
+  <section id="how-to" class="space-y-6 bg-gray-50 -mx-6 px-6 py-12">
+    <h2 class="text-3xl font-black uppercase italic">How to play Fun Clicker</h2>
+    <ol class="space-y-4 text-sm font-medium leading-loose text-gray-700 list-decimal list-inside">
+      <li>
+        Open the <a class="underline font-black text-black" href="/#game">embedded game</a> on the homepage — no
+        account and no install.
+      </li>
+      <li>Click (or tap) the main target to earn points. Early progress is slow on purpose.</li>
+      <li>Spend on cheap upgrades first so each click (and later idle income) scales faster.</li>
+      <li>Use <strong>FULLSCREEN</strong> for focus and <strong>RELOAD</strong> if the iframe hangs.</li>
+      <li>Keep going: mid-game multipliers and optional auto-click helpers smooth out the grind.</li>
+    </ol>
+    <p class="text-xs text-gray-500 font-medium">
+      Spelling note: searches like <em>funclicker</em> or <em>funklicker</em> usually mean the same Fun Clicker game.
+    </p>
+  </section>
+
+  <section id="upgrades" class="space-y-8">
+    <h2 class="text-3xl font-black uppercase italic">Upgrade path (simple)</h2>
+    <div class="space-y-4">
+      <div class="border-l-4 border-black pl-4">
+        <p class="font-black text-xs uppercase">Step 1 — Low-cost click boosts</p>
+        <p class="text-sm text-gray-600 font-medium">
+          Buy the cheapest useful upgrades until leaving the slow opening stage stops feeling painful.
+        </p>
+      </div>
+      <div class="border-l-4 border-black pl-4">
+        <p class="font-black text-xs uppercase">Step 2 — Mid-tier multipliers</p>
+        <p class="text-sm text-gray-600 font-medium">
+          Once each click scales, shift budget into medium multipliers instead of every tiny purchase.
+        </p>
+      </div>
+      <div class="border-l-4 border-black pl-4">
+        <p class="font-black text-xs uppercase">Step 3 — Auto / idle options</p>
+        <p class="text-sm text-gray-600 font-medium">
+          If the build offers automation, use it to stabilize progress between manual click bursts — this is in-game
+          progression, not a third-party “auto clicker” cheat tool.
+        </p>
+      </div>
+      <div class="border-l-4 border-black pl-4">
+        <p class="font-black text-xs uppercase">Step 4 — Save for high value</p>
+        <p class="text-sm text-gray-600 font-medium">
+          Skip weak buys when a clearly better upgrade is one short grind away.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="strategies" class="space-y-6 bg-black text-white -mx-6 px-6 py-12">
+    <h2 class="text-3xl font-black uppercase italic text-neo-yellow">Pro strategies</h2>
+    <div class="space-y-4 text-xs font-bold tracking-wide">
+      <div>
+        <p class="text-neo-blue">01. Warm-up burst</p>
+        <p class="opacity-70">Manual tap hard at the start so the first upgrade lands sooner.</p>
+      </div>
+      <div>
+        <p class="text-neo-blue">02. Compare cost vs gain</p>
+        <p class="opacity-70">Prefer upgrades with the best return over the next one to two minutes of play.</p>
+      </div>
+      <div>
+        <p class="text-neo-blue">03. Reload before rage-reset</p>
+        <p class="opacity-70">If clicks stop registering, use RELOAD on the play page before clearing browser data.</p>
+      </div>
+      <div>
+        <p class="text-neo-blue">04. Don’t chase every lookalike name</p>
+        <p class="opacity-70">
+          Horror, silence, Scratch, or “version 2” searches are often variants — play the embed here, then read the
+          short FAQ below instead of hunting fake edition pages.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="space-y-10">
+    <h2 class="text-3xl font-black uppercase italic bg-neo-pink inline-block px-2">Fun Clicker FAQ</h2>
+    <div class="divide-y-2 divide-black">
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          How do I save progress?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Most builds use local browser storage. Clearing site data can reset progress.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          What does CPS mean?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          CPS means clicks per second. Higher CPS usually improves passive progress.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Which upgrades are best at the beginning?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Start with low-cost upgrades, then switch to multipliers once early progress speeds up.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Why is the game not loading?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Check your connection, ease strict blockers temporarily, and use RELOAD on the
+          <a class="underline font-black text-black" href="/#game">play page</a>.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          How do I use fullscreen?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Click FULLSCREEN below the frame. Some browsers require one user gesture first.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          The frame is frozen. What now?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Use RELOAD to refresh only the embed. That avoids reloading the whole site.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Is Fun Clicker free? Do I need an APK?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Yes — play free in the browser on this site. You do <strong>not</strong> need an APK or sideload install for
+          the embedded version.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Is this the same as Cookie Clicker?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          No. Fun Clicker is its own browser clicker experience. We do not rank or brand this site as Cookie Clicker.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Horror / silence / Scratch / version 2?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          Those are common search variants. We host one clear browser play page plus this guide — not a fake shelf of
+          edition URLs. See also the short notes on the <a class="underline font-black text-black" href="/">homepage FAQ</a>.
+        </p>
+      </details>
+
+      <details class="py-6 group cursor-pointer">
+        <summary class="font-black text-lg uppercase flex justify-between items-center list-none">
+          Is this the official game website?
+          <span class="group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-sm font-medium text-gray-600 italic">
+          No. FunClicker.click is an independent play page and guide. Rights to the game belong to its original creator
+          or host.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <section class="space-y-4 border-none pt-8">
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-400">Next</p>
+    <div class="flex flex-wrap gap-3 text-[10px] font-black uppercase">
+      <a href="/#game" class="bg-black text-white neo-border px-4 py-2 shadow-brutal-sm">Back to play</a>
+      <a href="/unblocked/" class="bg-neo-blue neo-border px-4 py-2 shadow-brutal-sm">Browser / unblocked notes</a>
+    </div>
+  </section>
+</SiteLayout>

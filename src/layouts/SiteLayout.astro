@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import CfComments from '../components/CfComments.astro';
 
 type Props = {
   title: string;
@@ -67,6 +68,7 @@ const canonicalUrl = new URL(canonicalPath ?? Astro.url.pathname, Astro.site);
     <main class="max-w-4xl mx-auto px-6 pb-24">
       <slot />
     </main>
+    <CfComments />
     <SiteFooter />
   </body>
 </html>
